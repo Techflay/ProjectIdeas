@@ -10,12 +10,11 @@ $(window).load(function() {
               dataType: "json",
               data: "email="+email+"&password="+password
             }).done(function(res) { 
-                 console.log(res)
                  if(res["success"] == 1){
-                    alert("sucess");
+                    alert(res['message']);
                    // window.location.href = "../index";
                  }else{
-                   alert("filuere");
+                   alert(res['message']);
                  }
             });
           
