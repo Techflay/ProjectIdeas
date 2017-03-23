@@ -1,0 +1,19 @@
+#Tables
+1.members
+	user_id int Pk
+	email varchar(50)
+	phone varchar(13)
+	password varchar(50)
+2.project_ideas
+	project_id A_I int
+	user_id int
+	title varchar
+	proposal varchar
+	attachement varchar
+	date
+3.inbox 
+	inbox_id AU PK INT
+	sender_id INT
+	recipient_id INT
+	message TEXT
+	time TIMESTAMP
