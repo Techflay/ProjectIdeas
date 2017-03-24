@@ -1,10 +1,3 @@
-<!--
- * CoreUI - Open Source Bootstrap Admin Template
- * @version v1.0.0-alpha.4
- * @link http://coreui.io
- * Copyright (c) 2017 creativeLabs Łukasz Holeczek
- * @license MIT
- -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,17 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="CoreUI Bootstrap 4 Admin Template">
     <meta name="author" content="Lukasz Holeczek">
-    <meta name="keyword" content="CoreUI Bootstrap 4 Admin Template">
     <!-- <link rel="shortcut icon" href="assets/ico/favicon.png"> -->
 
-    <title>CoreUI Bootstrap 4 Admin Template</title>
+    <title>Login</title>
 
     <!-- Icons -->
-    <link href="../css/font-awesome.min.css" rel="stylesheet">
-    <link href="../css/simple-line-icons.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/simple-line-icons.css" rel="stylesheet">
 
     <!-- Main styles for this application -->
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery-2.2.3.min.js"></script>
+
 
 </head>
 
@@ -38,23 +32,25 @@
                         <div class="card-block">
                             <h1>Login</h1>
                             <p class="text-muted">Sign In to your account</p>
+                            <form id="loginForm">
                             <div class="input-group mb-1">
                                 <span class="input-group-addon">@</span>
-                                <input type="text" class="form-control" placeholder="Email">
+                                <input type="text"  id="email" class="form-control" placeholder="Email">
                             </div>
                             <div class="input-group mb-2">
                                 <span class="input-group-addon"><i class="icon-lock"></i>
                                 </span>
-                                <input type="password" class="form-control" placeholder="Password">
+                                <input type="password" id="password" class="form-control" placeholder="Password">
                             </div>
                             <div class="row">
                                 <div class="col-6">
-                                    <button type="button" class="btn btn-primary px-2">Login</button>
+                                    <button type="button" id="submitLogin" class="btn btn-primary px-2">Login</button>
                                 </div>
                                 <div class="col-6 text-right">
-                                    <a href="http://localhost/projectIdeas/Recover/index.html"><button type="button" class="btn btn-link px-0">Forgot password?</button></a>
+                                    <a href="http://localhost/projectIdeas/Recover/index.html"><button  class="btn btn-link px-0">Forgot password?</button></a>
                                 </div>
                             </div>
+                        </form>
                         </div>
                     </div>
                     <div class="card card-inverse card-primary py-3 hidden-md-down" style="width:44%">
@@ -72,7 +68,7 @@
     </div>
 
     <!-- Bootstrap and necessary plugins -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/custom/login.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 
