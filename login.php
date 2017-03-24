@@ -3,6 +3,7 @@
 require_once __DIR__ . '/db/db_connect.php';
 
 $db = new DB_CONNECT();
+
 if (isset($_GET['email']) && isset($_GET['password'])) {
     $email = $_GET['email'];
     $password = $_GET['password'];
