@@ -12,18 +12,31 @@ if (isset($_GET['phone']) && isset($_GET['email']) && isset($_GET['password'])  
 
     if (!empty($phone) && !empty($email) && !empty($password) && !empty($c_password)) {
         if($password == $c_password){
-            $queryresult = mysqli_query($db->connect(), "INSERT INTO `members`(`email` ,`phone`,`password`) VALUES('$email','$phone','$password')");
+            //Let us select all emails from the database
+             $queryemail = mysqli_query($db->connect(), "SELECT `email`  FROM `members` WHERE `email`='$email'");
+             if($queryemail->num_rows >0){
+                 $response['message'] =" The email is already Registered";
+                 $response['success'] = 0;
+                 echo json_encode($response);
+                 
+             }
+             else{
+                  //insertion takes place.
+                $queryresult = mysqli_query($db->connect(), "INSERT INTO `members`(`email` ,`phone`,`password`) VALUES('$email','$phone','$password')");
 
-        if ($queryresult) {            
+                 if ($queryresult) {            
                 $response['message'] = $error;
                 $response['success'] = 0;
                 echo json_encode($response);
             
-        } else {
-            $response['message'] = "Error in Query result";
-            $response['success'] = 0;
-            echo json_encode($response);
-        }
+                } else {
+                    $response['message'] = "Error in Query result";
+                    $response['success'] = 0;
+                    echo json_encode($response);
+                }
+             }
+            
+        
         
         }
      else {
