@@ -3,7 +3,21 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Apache24/htdocs/ProjectIdeas/login.html</file>
+=======
+            <file>file:/C:/Apache24/htdocs/ProjectIdeas/login.php</file>
+            <file>file:/C:/Apache24/htdocs/ProjectIdeas/js/custom/login.js</file>
+            <file>file:/C:/Apache24/htdocs/ProjectIdeas/compose.html</file>
+            <file>file:/C:/Apache24/htdocs/ProjectIdeas/db/db_connect.php</file>
+            <file>file:/C:/Apache24/htdocs/ProjectIdeas/db/db_handler.php</file>
+            <file>file:/C:/Apache24/htdocs/ProjectIdeas/index.html</file>
+            <file>file:/C:/Apache24/htdocs/ProjectIdeas/Backend/db.php</file>
+            <file>file:/C:/Apache24/htdocs/ProjectIdeas/Register/index.html</file>
+            <file>file:/C:/Apache24/htdocs/ProjectIdeas/read-mail.html</file>
+            <file>file:/C:/Apache24/htdocs/ProjectIdeas/login.html</file>
+            <file>file:/C:/Apache24/htdocs/ProjectIdeas/core.php</file>
+>>>>>>> 5e1a85f537f030388c418274836a6cfb50ca6f63
         </group>
     </open-files>
 </project-private>
